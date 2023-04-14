@@ -1,7 +1,32 @@
 //Get All contacts
-
-const getContact = (req, res) => {
+const getContacts = (req, res) => {
   res.status(200).json({ message: "Get all the contacts" });
 };
 
-module.exports = { getContact };
+//Create contact
+const createContact = (req, res) => {
+  res.status(201).json({ message: "Create contacts" });
+};
+
+//Update contact
+const getContact = (req, res) => {
+  res.status(200).json({ message: `Edit contact for ${req.params.id}` });
+};
+
+//Update contact
+const updateContact = (req, res) => {
+  res.status(200).json({ message: `Edit contact for ${req.params.id}` });
+};
+
+//Delete contact
+const deleteContact = (req, res) => {
+  res.status(200).json({ message: `Delete contact for ${req.params.id}` });
+};
+
+module.exports = {
+  getContacts,
+  createContact,
+  updateContact,
+  deleteContact,
+  getContact,
+};
