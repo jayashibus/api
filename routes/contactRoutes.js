@@ -9,7 +9,6 @@ const {
 } = require("../controller/contactController");
 
 router.route("/").get(getContacts);
-
 router.route("/").post(createContact);
 router.route("/:id").get(getContact);
 router.route("/:id").put(updateContact);
